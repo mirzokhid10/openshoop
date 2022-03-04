@@ -1,0 +1,314 @@
+.iphonetwelve__body {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
+}
+
+.iphonetwelve__presentation {
+  grid-column: 1/3;
+  grid-row: 1/5;
+}
+
+.iphonetwelve__details {
+  grid-column: 3/5;
+  grid-row: 1/5;
+}
+
+.iphonetwelve__title,
+.iphonetwelve__price,
+.iphonetwelve__subtitle {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  display: flex;
+  align-items: left;
+  letter-spacing: 0.05em;
+  color: #000000;
+  margin: 0;
+}
+
+.iphonetwelve__price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 40px 0 20px 0;
+}
+
+.iphonetwelve__subtitle {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.iphonetwelve__lists {
+  margin: 0 0 10px 0;
+}
+
+.iphonetwelve__items {
+  position: relative;
+  margin: 5px 0;
+}
+
+.iphonetwelve__links::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: -3%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #313131;
+}
+
+.iphonetwelve__links {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  display: flex;
+  align-items: left;
+  letter-spacing: 0.05em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.iphonetwelve__links:hover {
+  color: #000;
+}
+
+.iphonetwelve__buttons {
+  margin: 30px 0 0 0;
+}
+
+.btn.cart__btn,
+.btn.buynow__btn {
+  background-color: #313131;
+  color: #fff;
+  border-radius: 0;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.btn.cart__btn {
+  padding: 10px 54px;
+}
+
+.btn.buynow__btn {
+  padding: 12px 45px;
+}
+
+.btn.cart__btn:hover,
+.btn.buynow__btn:hover {
+  color: #fff;
+}
+
+/* psvr */
+
+.psvr__body {
+  background-image: url(../images/virtualbg.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 30px 145px 0;
+}
+
+.psvr__title h1 {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: right;
+  color: #313131;
+  margin-right: 17%;
+}
+
+.psvr__desc p {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  color: #313131;
+  margin: 39px 31px 116px 0;
+}
+
+.btn.psvr__link {
+  padding: 12px 39px;
+  border-radius: 0;
+  color: #fff;
+  background-color: #313131;
+  margin-right: 13%;
+}
+
+@media screen and (max-width: 992px) {
+  .iphonetwelve__title,
+  .iphonetwelve__price,
+  .iphonetwelve__subtitle {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .iphonetwelve__price {
+    font-size: 24px;
+    line-height: 26px;
+    margin: 30px 0 14px 0;
+  }
+
+  .iphonetwelve__subtitle {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .btn.cart__btn {
+    padding: 10px 34px;
+  }
+
+  /* ps vr */
+
+  .psvr__body {
+    padding: 20px 30px 80px 30px;
+  }
+
+  .psvr__title h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-right: 0%;
+  }
+
+  .psvr__desc p {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 39px 0 116px 0;
+    text-align: end;
+  }
+
+  .btn.psvr__link {
+    margin-right: 0%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .iphonetwelve__title,
+  .iphonetwelve__price,
+  .iphonetwelve__subtitle {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .iphonetwelve__price {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 20px 0 10px 0;
+  }
+
+  .iphonetwelve__subtitle {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .btn.cart__btn {
+    padding: 10px 26px;
+  }
+
+  .iphonetwelve__body {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(6, 16.6%);
+  }
+
+  .iphonetwelve__presentation {
+    grid-column: 2/5;
+    grid-row: 1/4;
+  }
+
+  .iphonetwelve__details {
+    grid-column: 1/6;
+    grid-row: 4/8;
+  }
+
+  .psvr__body {
+    padding: 20px 30px 80px 30px;
+  }
+
+  .psvr__title h1 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-right: 0%;
+  }
+
+  .psvr__desc p {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 39px 0 116px 0;
+    text-align: end;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .iphonetwelve__title,
+  .iphonetwelve__price,
+  .iphonetwelve__subtitle {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .iphonetwelve__price {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 20px 0 10px 0;
+  }
+
+  .iphonetwelve__subtitle {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .btn.cart__btn {
+    padding: 10px 26px;
+  }
+
+  .iphonetwelve__body {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(4, 25%);
+  }
+
+  .iphonetwelve__presentation {
+    grid-column: 1/5;
+    grid-row: 1/3;
+    justify-content: center;
+  }
+
+  .iphonetwelve__details {
+    grid-column: 1/5;
+    grid-row: 3/5;
+    justify-content: center;
+  }
+
+  .psvr__body {
+    padding: 20px 30px 0px 30px;
+  }
+
+  .psvr__title h1 {
+    text-align: center;
+  }
+
+  .psvr__desc p {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 39px 0 150px 0;
+    text-align: end;
+    opacity: 0;
+  }
+} ;

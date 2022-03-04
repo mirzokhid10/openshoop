@@ -1,0 +1,177 @@
+/* apple */
+
+.cards {
+  position: relative;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  padding: 15px 0;
+}
+
+.btn.cards__btn {
+  position: relative;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  padding: 5px 36px;
+  background-color: #313131;
+  border-radius: 0;
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.cards__heart {
+  position: absolute;
+  display: none;
+  top: 18px;
+  right: 16px;
+  font-size: 18px;
+  color: #313131;
+  transition: 0.3s ease;
+}
+
+.cards:hover {
+  border: 1px solid #d6d6d6;
+}
+
+.cards:hover .btn.cards__btn {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.cards:hover .cards__heart {
+  display: block;
+}
+
+/* controller carousel */
+
+.controller__content {
+  background: url(../images/controller.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 10px 0 20px 20px;
+}
+
+.controller__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: left;
+  color: #313131;
+}
+
+.controller__desc {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: left;
+  color: #313131;
+  margin: 10px 0 280px 0;
+}
+
+.controller__link {
+  padding: 13px 38px;
+  background-color: #313131;
+  border-radius: 0;
+  color: #ffffff;
+}
+
+.controller__link:hover {
+  color: #ffffff;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  left: 10%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-indicators {
+  bottom: -100px;
+}
+
+.numbers__btns {
+  text-indent: 0;
+  margin: 0 2px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 100%;
+  line-height: 30px;
+  color: #fff;
+  background-color: #999;
+  transition: all 0.25s ease;
+}
+
+.numbers__btns.active,
+.numbers__btns:hover {
+  margin: 0 2px;
+  width: 30px;
+  height: 30px;
+  background-color: #337ab7;
+}
+
+.controller__pagination {
+  margin: 45px 0 15px 0;
+}
+
+.page-item {
+  position: relative;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: #ababab;
+  text-decoration: none;
+  background-color: #fff;
+  transition: 0.3s ease;
+  padding: 0 10px;
+  border-radius: 0;
+  border: none;
+}
+
+.page-link.active {
+  color: #000;
+}
+
+.page-link:hover {
+  color: #000;
+  background-color: transparent;
+  border: none;
+  border-right: none;
+}
+
+@media screen and (max-width: 576px) {
+  .controller__content {
+    background-size: cover;
+  }
+
+  .controller__desc {
+    opacity: 0;
+  }
+  .controller__desc {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: left;
+    color: #313131;
+    margin: 10px 0 200px 0;
+  }
+} ;

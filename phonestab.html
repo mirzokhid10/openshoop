@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <!-- noto sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- cdnjs link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style/phonestab.css" />
+    <title>Cell Phones & Tablets</title>
+  </head>
+  <body class="body">
+    <div class="additions d-none d-sm-block">
+      <div class="container-wrapper">
+        <div
+          class="additions__inner d-flex justify-content-end align-items-center"
+        >
+          <ul
+            class="additions__lists float-start d-flex unstyled align-items-center gap-5"
+          >
+            <li class="nav-item dropdown additions__items">
+              <a
+                class="nav-link dropdown-toggle additions__links td text-white"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                English
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item td" href="#">Uzbek</a></li>
+                <li><a class="dropdown-item td" href="#">English</a></li>
+              </ul>
+            </li>
+            <li class="additions__items">
+              <a href="#" class="additions__links td"
+                ><i class="fa-solid fa-phone"></i>
+                <span>(907) 555-0101</span>
+              </a>
+            </li>
+            <li class="additions__items">
+              <a href="#" class="additions__links td">
+                <i class="fa-solid fa-user"></i>
+                <span>sign in</span>
+              </a>
+            </li>
+            <li class="additions__items">
+              <a href="#" class="additions__links td">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Cart</span>
+              </a>
+            </li>
+            <li class="additions__items">
+              <button class="additions__items-btn" onclick="myFunction()">
+                <i class="fa-solid fa-lightbulb"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container-wrapper">
+        <div class="header-inner header__navbar">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"
+                ><img
+                  class="navbar-brand__img"
+                  src="./images/Logo.png"
+                  alt="Logo"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-center"
+                id="navbarSupportedContent"
+              >
+                <ul
+                  class="navbar-nav me-auto mb-2 mb-lg-0 d-md-block d-lg-none"
+                >
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Cell Phones
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./phonestab.html"
+                      >Computers&Laptop</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">TV&Video</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./asseccories.html"
+                      >Asseccories</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home appliance </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> Video Games&Consoles</a>
+                  </li>
+                </ul>
+                <form class="d-flex navbar-form justify-content-between">
+                  <input
+                    class="form-control navbar-form__search"
+                    type="search"
+                    placeholder="What are you looking for?"
+                    aria-label="Search"
+                  />
+                  <a class="btn navbar-form__btn" href="#" role="button"
+                    ><i class="fa-solid fa-magnifying-glass"></i> SEARCH OUR
+                    STORE</a
+                  >
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <nav
+      class="navbar navbar__custombw d-none d-lg-block navbar-expand-lg navbar-light"
+    >
+      <div class="container-wrapper">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto gap-2">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle navigation__links px-2"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cell Phones
+              </a>
+              <ul
+                class="dropdown-menu p-4 justify-content-around"
+                aria-labelledby="navbarDropdown"
+              >
+                <div class="d-flex flex-row gap-2">
+                  <div class="col-6">
+                    <h3 class="dropdown-menu__title">Cell Phones</h3>
+                    <ul class="dropdown-menu__items unstyled">
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">Xiaomi</a>
+                      </li>
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">Apple</a>
+                      </li>
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">Samsung</a>
+                      </li>
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">Huawei</a>
+                      </li>
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">BQ</a>
+                      </li>
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">Nokia</a>
+                      </li>
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">Inoi</a>
+                      </li>
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">Vivo</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <h3 class="dropdown-menu__title">Tablets</h3>
+                    <ul class="dropdown-menu__items unstyled">
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">Xiaomi</a>
+                      </li>
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">Apple</a>
+                      </li>
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">Samsung</a>
+                      </li>
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">Huawei</a>
+                      </li>
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">BQ</a>
+                      </li>
+                      <li class="dropdown-menu__lists">
+                        <a class="dropdown-menu__links td" href="#">More...</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navigation__links px-2" href="./phonestab.html"
+                >Computers&Laptop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navigation__links px-2" href="#">Tv&Video</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link navigation__links px-2"
+                href="./asseccories.html"
+                >Asseccories</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navigation__links px-2" href="#"
+                >Home appliance</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navigation__links px-2" href="#"
+                >Video Games&Consoles</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <section class="hero py-5">
+        <div class="container-wrapper">
+          <div class="hero-inner">
+            <div class="hero-inner__carousel">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div
+                  class="carousel-indicators carousel-indicators__custom pt-5"
+                >
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./images/slide1.png"
+                      class="d-block w-100"
+                      alt="./images/slide1.png"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/slide2.png"
+                      class="d-block w-100"
+                      alt="./images/slide2.png"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./images/slide1.png"
+                      class="d-block w-100"
+                      alt="./images/slide1.png"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hero-inner__content d-flex flex-column align-items-center justify-content-center text-center"
+            >
+              <h1 class="content__title">
+                Color your days with <br />
+                small joy
+              </h1>
+              <a class="btn content__link" href="#">SHOP NOW</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- apple -->
+      <section class="phone section py-5">
+        <div class="container-wrapper">
+          <div class="phone-inner">
+            <h1 class="phone-inner__title">Apple</h1>
+            <div class="phone__cards">
+              <div class="cards text-center">
+                <a class="cards__inner td" href="#">
+                  <div class="cards__heart">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <img
+                    class="cards__img w-100"
+                    src="./images/apple1.png"
+                    alt="cards1"
+                  />
+                  <h3 class="cards__title">Smart Watch W34 | ZM (White)</h3>
+                  <p class="cards__price">1300$</p>
+                  <a class="btn cards__btn" href="#" role="button">BUY</a>
+                </a>
+              </div>
+              <div class="cards text-center">
+                <a class="cards__inner td" href="#">
+                  <div class="cards__heart">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <img
+                    class="cards__img w-100"
+                    src="./images/apple2.png"
+                    alt="cards1"
+                  />
+                  <h3 class="cards__title">AirPods 2.1</h3>
+                  <p class="cards__price">135$</p>
+                  <a class="btn cards__btn" href="#" role="button">BUY</a>
+                </a>
+              </div>
+              <div class="cards text-center">
+                <a class="cards__inner td" href="#">
+                  <div class="cards__heart">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <img
+                    class="cards__img w-100"
+                    src="./images/apple3.png"
+                    alt="cards1"
+                  />
+                  <h3 class="cards__title">Smart Watch W34 | ZM (Black)</h3>
+                  <p class="cards__price">29.5$</p>
+                  <a class="btn cards__btn" href="#" role="button">BUY</a>
+                </a>
+              </div>
+              <div class="cards text-center">
+                <a class="cards__inner td" href="#">
+                  <div class="cards__heart">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <img
+                    class="cards__img w-100"
+                    src="./images/apple4.png"
+                    alt="cards1"
+                  />
+                  <h3 class="cards__title">Coffee machine VITEK VT-1526</h3>
+                  <p class="cards__price">78$</p>
+                  <a class="btn cards__btn" href="#" role="button">BUY</a>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a
+                class="btn phone__btn justify-content-center align-items-center"
+                href="#"
+                role="button"
+                >LEARN MORE
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- apple -->
+
+      <!-- samsaung -->
+      <section class="phone section py-5">
+        <div class="container-wrapper">
+          <div class="phone-inner">
+            <h1 class="phone-inner__title">Samsung</h1>
+            <div class="phone__cards">
+              <div class="cards text-center">
+                <a class="cards__inner td" href="#">
+                  <div class="cards__heart">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <img
+                    class="cards__img w-100"
+                    src="./images/samsung1.png"
+                    alt="cards1"
+                  />
+                  <h3 class="cards__title">Smart Watch W34 | ZM (White)</h3>
+                  <p class="cards__price">1300$</p>
+                  <a class="btn cards__btn" href="#" role="button">BUY</a>
+                </a>
+              </div>
+              <div class="cards text-center">
+                <a class="cards__inner td" href="#">
+                  <div class="cards__heart">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <img
+                    class="cards__img w-100"
+                    src="./images/samsung2.png"
+                    alt="cards1"
+                  />
+                  <h3 class="cards__title">AirPods 2.1</h3>
+                  <p class="cards__price">135$</p>
+                  <a class="btn cards__btn" href="#" role="button">BUY</a>
+                </a>
+              </div>
+              <div class="cards text-center">
+                <a class="cards__inner td" href="#">
+                  <div class="cards__heart">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <img
+                    class="cards__img w-100"
+                    src="./images/samsung3.png"
+                    alt="cards1"
+                  />
+                  <h3 class="cards__title">Smart Watch W34 | ZM (Black)</h3>
+                  <p class="cards__price">29.5$</p>
+                  <a class="btn cards__btn" href="#" role="button">BUY</a>
+                </a>
+              </div>
+              <div class="cards text-center">
+                <a class="cards__inner td" href="#">
+                  <div class="cards__heart">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <img
+                    class="cards__img w-100"
+                    src="./images/samsung4.png"
+                    alt="cards1"
+                  />
+                  <h3 class="cards__title">Coffee machine VITEK VT-1526</h3>
+                  <p class="cards__price">78$</p>
+                  <a class="btn cards__btn" href="#" role="button">BUY</a>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a
+                class="btn phone__btn justify-content-center align-items-center"
+                href="#"
+                role="button"
+                >LEARN MORE
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- apple -->
+
+      <!-- Xiaomi -->
+      <section class="phone section py-5">
+        <div class="container-wrapper">
+          <div class="phone-inner">
+            <h1 class="phone-inner__title">Samsung</h1>
+            <div class="phone__cards">
+              <div class="cards text-center">
+                <a class="cards__inner td" href="#">
+                  <div class="cards__heart">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <img
+                    class="cards__img w-100"
+                    src="./images/samsung1.png"
+                    alt="cards1"
+                  />
+                  <h3 class="cards__title">Smart Watch W34 | ZM (White)</h3>
+                  <p class="cards__price">1300$</p>
+                  <a class="btn cards__btn" href="#" role="button">BUY</a>
+                </a>
+              </div>
+              <div class="cards text-center">
+                <a class="cards__inner td" href="#">
+                  <div class="cards__heart">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <img
+                    class="cards__img w-100"
+                    src="./images/samsung2.png"
+                    alt="cards1"
+                  />
+                  <h3 class="cards__title">AirPods 2.1</h3>
+                  <p class="cards__price">135$</p>
+                  <a class="btn cards__btn" href="#" role="button">BUY</a>
+                </a>
+              </div>
+              <div class="cards text-center">
+                <a class="cards__inner td" href="#">
+                  <div class="cards__heart">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <img
+                    class="cards__img w-100"
+                    src="./images/samsung3.png"
+                    alt="cards1"
+                  />
+                  <h3 class="cards__title">Smart Watch W34 | ZM (Black)</h3>
+                  <p class="cards__price">29.5$</p>
+                  <a class="btn cards__btn" href="#" role="button">BUY</a>
+                </a>
+              </div>
+              <div class="cards text-center">
+                <a class="cards__inner td" href="#">
+                  <div class="cards__heart">
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <img
+                    class="cards__img w-100"
+                    src="./images/samsung4.png"
+                    alt="cards1"
+                  />
+                  <h3 class="cards__title">Coffee machine VITEK VT-1526</h3>
+                  <p class="cards__price">78$</p>
+                  <a class="btn cards__btn" href="#" role="button">BUY</a>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <a
+                class="btn phone__btn justify-content-center align-items-center"
+                href="#"
+                role="button"
+                >LEARN MORE
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Xiaomi -->
+
+      <!-- ps slider -->
+      <section class="controller section py-5">
+        <div class="controller__content">
+          <div class="container-wrapper">
+            <div class="controller__info">
+              <h1 class="controller__title text-center text-sm-start">
+                Xbox Wireless Controller
+              </h1>
+              <p class="controller__desc">
+                Textured triggers and bumpers I Hybrid <br />
+                D-pad I Button mapping I Bluetooth
+              </p>
+            </div>
+            <div
+              class="controller__btn d-flex justify-content-center justify-content-lg-start"
+            >
+              <a class="btn controller__link" href="#" role="button"
+                >ADD TO CART</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="controller__pagination">
+          <div class="container-wrapper">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link active" href="#">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#"
+                    >Next <i class="fa-solid fa-angles-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <!-- ps slider -->
+    </main>
+    <footer class="footer section">
+      <div class="container-wrapper">
+        <div class="footer__nav">
+          <a href="#"><img src="./images/logowhite.png" alt="" /></a>
+
+          <div class="footer__search-bar">
+            <label class="footer__label" for="">Subscribe to Newslatter</label>
+            <form
+              class="d-flex footer__form navbar-form justify-content-between"
+            >
+              <input
+                class="form-control navbar-form__search"
+                type="search"
+                placeholder="What are you looking for?"
+                aria-label="Search"
+              />
+              <a
+                class="btn footer__form-btn navbar-form__btn"
+                href="#"
+                role="button"
+              >
+                SING UP</a
+              >
+            </form>
+          </div>
+          <div class="footer__social">
+            <ul class="d-flex social__lists unstyled gap-5">
+              <li class="social__items">
+                <a href="#" class="social__links"
+                  ><i class="fa-brands fa-telegram"></i
+                ></a>
+              </li>
+              <li class="social__items">
+                <a href="#" class="social__links"
+                  ><i class="fa-brands fa-facebook"></i
+                ></a>
+              </li>
+              <li class="social__items">
+                <a href="#" class="social__links"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__navigation">
+          <ul
+            class="footer__navigation-lists d-flex flex-row justify-content-center align-items-center unstyled gap-5"
+          >
+            <li class="footer__navigation-items">
+              <a href="#" class="footer__navigation-links td">news</a>
+            </li>
+            <li class="footer__navigation-items">
+              <a href="#" class="footer__navigation-links td">help</a>
+            </li>
+            <li class="footer__navigation-items">
+              <a href="#" class="footer__navigation-links td">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
